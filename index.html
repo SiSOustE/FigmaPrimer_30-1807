@@ -10,109 +10,136 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  
   <link rel="shortcut icon" href="img/Cherry.jpeg">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <div class="cntTotal">
     <header>
-      <div class="header-left">Word Peas</div>
-      <div class="header-right">
+      <div class="title-left">World Peas</div>
+      <div class="siteBar">
         <div class="tab">Shop</div>
         <div class="tab">Newstand</div>
         <div class="tab">Who we are</div>
         <div class="tab">My profile</div>
-        <form method="get">
-          <buttonBasked type="button">Basket (3)</buttonBasked>
-        </form>
-      </div>
+        <button type="button" id="basket">Basket (3)</button>
+    </div>
     </header>
 
     <main>
-      <!-- <h2>Basket</h2> -->
-      <div id="cntRow-1">
-        <span id="mainHead">Basket</span>
-        <span id="amountElements">3 items</span>
+
+      <div id="pageHeading">
+        <div id="mainTitle">Basket</div>
+        <div id="numberItems">3 items</div>
       </div>
-      <!-- <p id="xp1"></p> -->
-        <div class="cntMain">
+      <div class="wrapperOrder">
+        <div class="cntSetItems">
           
-          <div class="cntOrder">
-            
+          <div class="item">
             <div class="cntImg">
               <img src="img/Tomato-1.jpg" alt="">
             </div>
-            <div class="cntSelectedProd">
-              <div class="cntNameCost">
-                <!-- <div class="nameProd"></div> -->
-                <h3>Heirloom tomato</h3>
-                <div class="cost"></div>
+            
+            <div class="wrapperObject">
+
+              <div class="cntRegular-1">
+                <p class="f-125 fBold">Heirloom tomato</p>
+                <p class="f-125 fBold fColor-1">$5.99 / lb</p>
+                <div class="cnt-2">
+                  <p class="fBold">1 lb</p>
+                  <div class="cntImg-icon">
+                    <img src="img/Icon_change value.svg" alt="">                
+                  </div>
+                </div>
               </div>
-              <div class="price"></div>
-              <div class="cntQuantityGoods">
-                <div class="txtQuantity"></div>
-                <div class="iconQuantity"></div>
+              <div class="cntRegular-1">
+                <p class="f-125 fBold">$5.99</p>
               </div>
             </div>
-            
+          </div>
+
+          <div class="item">
             <div class="cntImg">
-              <img src="" alt="">
+              <img src="img/Organic ginger.png" alt="">
             </div>
-            <div class="cntSelectedProd">
-              <div class="cntNameCost">
-                <!-- <div class="nameProd"></div> -->
-                <h3>Organic ginger</h3>
-                <div class="cost"></div>
+            <div class="wrapperObject">
+
+              <div class="cntRegular-1">
+                <p class="f-125 fBold">Organic ginger</p>
+                <p class="f-125 fBold fColor-1">$12.99 / lb</p>
+                <div class="cnt-2">
+                  <p class="fBold">0.5 lb</p>
+                  <div class="cntImg-icon">
+                    <img src="img/Icon_change value.svg" alt="">                
+                  </div>
+                </div>
               </div>
-              <div class="price"></div>
-              <div class="cntQuantityGoods">
-                <div class="txtQuantity"></div>
-                <div class="iconQuantity"></div>
+              <div class="cntRegular-1">
+                <p class="f-125 fBold">$6.50</p>
               </div>
             </div>
-            
+          </div>
+
+          <div class="item">
             <div class="cntImg">
-              <img src="" alt="">
+              <img src="img/Sweet onion.png" alt="">
             </div>
-            <div class="cntSelectedProd">
-              <div class="cntNameCost">
-                <!-- <div class="nameProd"></div> -->
-                <h3>Sweet onion</h3>
-                <div class="cost"></div>
+            <div class="wrapperObject">
+
+              <div class="cntRegular-1">
+                <p class="f-125 fBold">Sweet onion</p>
+                <p class="f-125 fBold fColor-1">$2.99 / lb</p>
+                <div class="cnt-2">
+                  <p class="fBold">5 lb</p>
+                  <div class="cntImg-icon">
+                    <img src="img/Icon_change value.svg" alt="">                
+                  </div>
+                </div>
               </div>
-              <div class="price"></div>
-              <div class="cntQuantityGoods">
-                <div class="txtQuantity"></div>
-                <div class="iconQuantity"></div>
+              <div class="cntRegular-1">
+                <p class="f-125 fBold">$14.95</p>
               </div>
             </div>
-            
           </div>
           
-          <div class="cntOrderSum">
-            <!-- 
-            Order Summary
-            <h3 class="orderSum"></h3> -->
-            <div class="grid-it-1">One</div>
-            <div class="grid-it-2">Block two</div>
-            <div class="grid-it-3">Tree element</div>
-            <div class="grid-it-4">Fourth block in line</div>
-            <div class="grid-it-5">Five</div>
-            <div class="grid-it-6">Six</div>
-            <div class="grid-it-7">Seven</div>
-            <div class="grid-it-8">Eight</div>
-            <div class="grid-it-9">Nine</div>
-            <div class="grid-it-10">Tenth element in array of</div>
-            <div class="grid-it-11">Eleven</div>
-            <div class="grid-it-12">Twelve</div>
+        </div>
 
-            
+      <!-- Order summary -->
+        <div class="cntSetItems">
+          <div class="item">
+            <div class="wrapperObject">
+              <div class="cntRegular-1">
+                <p class="f-125 fBold">Order summary</p>
+                <p class="f1">Subtotal</p>
+                <p class="f1">Shipping</p>
+                <p class="f1">Tax</p>
+                <p class="fBold">Total</p>
+                <button type="button" id="basket">Continue to payment (3)</button>
 
+              </div>
+              <div class="cntRegular-1">
+                <p class="f-125">-</p>
+                <p class="f1">$27.44</p>
+                <p class="f1">$3.99</p>
+                <p class="f1">$2.00</p>
+                <p class="f-1 fBold">$33.43</p>
+              </div>
+              
+              
+                
+
+              </div>
+            </div>
+            </div>
           </div>
-
+        </div>
       </div>
       
+    </div>
+    
+  </div>
     </main>
-  </nav>  
+    </div>
+  </div>
   </body>
   </html>
